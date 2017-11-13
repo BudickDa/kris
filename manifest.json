@@ -1,0 +1,29 @@
+{
+  "short_name": "Kris",
+  "name": "Kris - Your automatic assistant",
+  "icons": {
+    "16": "assets/face.png",
+    "128": "assets/face.png"
+  },
+  "version": "0.1",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+      "16": "assets/face.png",
+      "128": "assets/face.png"
+    },
+    "default_title": "Kris",
+    "default_popup": "window.html"
+  },
+  "background": {
+    "scripts": []
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["main.js"]
+    }
+  ]
+}
